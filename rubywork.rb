@@ -310,13 +310,38 @@ puts "changes made"
 # Define the grade_students method.
 # Use conditionals to determine the grade.
 
-grades = ["90", "80", "70", "60", "50"]
+# grades = ["90", "80", "70", "60", "50"]
 
-def get_grades(array)
-  p array
-end
+# def get_grades(array)
+#   p array
+# end
 
-p get_grades(grades)
+# p get_grades(grades)
 
+# Command-Line To-Do List Application
+# Project Requirements:
+# User Interface:
+# Display a menu with options:
+#  Add a task
+#  View tasks
+#  Mark task as completed
+#  Delete a task
+#  Exit
+# Functionalities:
+#  Add a Task:
+#   Prompt the user to enter a task description.
+#   Store the task in an array.
+# View Tasks:
+#  Display all tasks with their status (completed/not completed).
+# Mark Task as Completed:
+#  Allow the user to mark a specific task as completed.
+# Delete a Task:
+#   Allow the user to delete a specific task.
+# Exit:
+#  Terminate the application.
 
-
+# Task: Write pseudocode to plan the application logic.
+# Instructions:
+#  Break down the project into smaller tasks.
+#  Identify the methods you'll need.
+#  Consider how you'll store and manage the tasks.
