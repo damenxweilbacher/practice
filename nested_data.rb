@@ -110,3 +110,32 @@
 #   students[:joe].delete(:math) # delete joes math grade
 #   students[:damen][:engineering] = 110 # adds on engineering class and grade for damen
 # p students
+
+# an array of hashes representing products
+# products = [
+# {name: "Laptop", price: 1000, tags: ["electronics", "computers"]},
+# {name: "book", price: 20, tags: ["education", "literature"]},
+# {name: "Coffee Mug", price: 10, tags: ["kitchen", "beverage"]}
+# ]
+
+
+# p products[0][:tags][1] # accesses the tag "computers"
+
+# Task: Create a program that manages a list of employees, where each employee has:
+# A name (string)
+# A position (string)
+# A list of skills (array)
+# Contact information (hash with :email and :phone)
+# Instructions:
+# Create a file named employee_directory.rb.
+# Define an array of employee hashes.
+# Iterate over the array to display each employee's information.
+
+
+
+
+
+
+
+
+
