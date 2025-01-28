@@ -46,3 +46,67 @@
 #     p num
 #   end
 # end  
+
+# Task: Create a hash representing a student with nested information.
+# Instructions:
+# Create a file named nested_data.rb.
+# Include keys for :name, :grades (hash of subjects and scores), and :contact (hash with :email and :phone).
+# Access and print specific nested values.
+
+# student = {
+#   name: "Jordan",
+#   grades: {
+#   math: "98",
+#   art:  "98",
+#   english: "80",
+#   science: "50"
+#   },
+# contact: {
+#   email: "email@email.email",
+#   phone: "671-123-4567"
+#   }
+# }
+
+# p student[:name] # prints student name
+# p student[:grades] # prints all listed grades
+# p student[:contact] # prints out contact information
+
+# Task: Write a program that iterates over a hash of multiple students, each with their own nested hashes.
+# Instructions:
+# Define a hash where each key is a student's name, and the value is a hash of their grades.
+# Iterate over each student to display their grades.
+
+# students = {
+#   kevin:{ math: 99, biology: 89},
+#   joe:{ math: 90, biology: 89},
+#   damen:{ math: 100, biology: 100}
+# }
+
+# p students
+
+# students[:kevin]. each do |subject, grade|
+#   # puts subject, grade
+#   puts "#{subject.capitalize}: #{grade}"
+# end
+
+# person = {
+# name: "Noah",
+# age: 25,
+# hobby: "golf",
+# }
+
+# p person
+# p person[:name] = "Damen" redeclares name from noah > damen
+# p person
+
+# students = {
+#   kevin:{ math: 99, biology: 89},
+#   joe:{ math: 90, biology: 89},
+#   damen:{ math: 100, biology: 100}
+# }
+
+# p students
+#   students[:kevin][:biology] = 95 # redeclares kevins biology grade
+#   students[:joe].delete(:math) # delete joes math grade
+#   students[:damen][:engineering] = 110 # adds on engineering class and grade for damen
+# p students
