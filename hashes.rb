@@ -91,11 +91,11 @@
 # Define an array of hashes, where each hash represents a person with keys for :name, :age, and :city.
 # Iterate over the array to print out each person's information.
 
-people = [
-{ name: "Damen", age: 19, city: "Yigo" },
-{ name: "Kevin", age: 27, city: "New York" },
-{ name: "Joe", age: 49, city: "Denver" }
-]
+# people = [
+# { name: "Damen", age: 19, city: "Yigo" },
+# { name: "Kevin", age: 27, city: "New York" },
+# { name: "Joe", age: 49, city: "Denver" }
+# ]
 
 # puts "Enter a number to find out about the following people:"   # different idea from exercise lol
 # puts "
