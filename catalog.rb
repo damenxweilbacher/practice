@@ -53,19 +53,25 @@
 #   end
 # end
 
+# challenge: convert tags into an array
+ # challenge: be able to take decimal inputs. used to_f (float) to take decimal inputs.
+
 list = []
 def add_item(task_list)
+  tag_list = []
   puts "Please enter item name"
   name = gets.chomp
   puts "Please enter item category"
   category = gets.chomp
   puts "Please enter price"
-  price = gets.chomp.to_i
+  price = gets.chomp.to_f # in order to use decimals use .to_f for float and to_s for string and to_i for integer.
   puts "Please input associated tag"
   tags = gets.chomp
-  task_list << { name: name, category: category, price: price, tags: tags }
+  tag_list << tags # append adds to an array
+  
+  task_list << { name: name, category: category, price: price, tags: tag_list } # mix of hashes and includes tag array at the end.
   p task_list
-  return task_list
+  return task_list # inputs are saved and placed outside the function.
 end
 def view_item(task_list)
   if task_list.empty? #.empty? checks if no data
@@ -75,7 +81,7 @@ def view_item(task_list)
     p "NAME #{files[:name]}"
     p "CATEGORY #{files[:category]}"
     p "PRICE #{files[:price]}"
-    p "TAGS #{files[:tags]}"
+    puts "TAGS #{files[:tags]}"
     p "----------"
     end
   end
