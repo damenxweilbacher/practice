@@ -1,0 +1,8 @@
+Name:
+Damen
+Message to send:
+Hello buddy boi
+Name:
+dameb
+Message to send:
+appending example into example.txt from file_io.rb
