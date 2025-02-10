@@ -150,3 +150,51 @@
 # calculator.multiply(2, 4)
 
 # calculator.divide(4, 2)
+
+# Instructions:
+# Create another method for the Introduction module
+# Test that method in the Person, Student, or Teacher classes
+# Write an RSpec test in introduction_spec.rb for it
+
+module Introduction
+  def introduce
+    "Hello, my name is #{@name}"
+  end
+
+  def schools
+    " I go to #{@school}"
+  end 
+end
+
+class Person
+  include Introduction
+  attr_accessor :name, :age
+
+  def initialize(name, age)
+    raise ArgumentError, 'Age must be a positive number' if age < 0
+    @name = name
+    @age = age
+  end
+end
+
+class Student < Person
+  def initialize(name, age, grade, school)
+    super(name, age)
+    @grade = grade
+    @school = school
+  end
+end
+
+class Teacher < Person
+  def initialize(name, age, subject, years_of_experience)
+    super(name, age)
+    @subject = subject
+    @years_of_experience = years_of_experience
+  end
+end
+
+student = Student.new("Leon", 25, "12", "FD")
+puts student.introduce
+
+teacher = Teacher.new("Charles", 26, "Computer Science", 50)
+puts teacher.introduce
